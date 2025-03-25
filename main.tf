@@ -1,6 +1,6 @@
 provider "azurerm" {
   features {}
-  subscription_id = "8a05877f-9446-4bb0-9c31-75bcfe060a89"
+  subscription_id = "enter_your_subscription_id_here"
 }
 
 resource "azurerm_resource_group" "rg" {
@@ -89,7 +89,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_ssh_key {           
     username   = "azureuser"
-    public_key = file("/home/aakash/terraform_mod_vm/id_rsa.pub")
+    public_key = file("enter_your_path_of_id_rsa.pub_here")
   }
 
   os_disk {
